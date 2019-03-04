@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <% include partials/bootstrap.ejs %>
+    <title>Join</title>
+</head>
+<body>
+    <!--Navigation-->
+    <% include partials/navBars/UserNav.ejs %>
+
+    <div class = "m-5"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <!-- tabs -->
+                <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                       <li class="active"><a href="#info" data-toggle="tab"><button type="button" class = "btn btn-lg btn-primary">Info</button></a></li> &nbsp; &nbsp;
+					<li><a href="#joined" data-toggle="tab"><button type="button" class = "btn btn-lg btn-primary">Events Joined</button></a></li> &nbsp; &nbsp;
+					<li><a href="#created" data-toggle="tab"><button type="button" class = "btn btn-lg btn-primary">Events Created</button></a></li> &nbsp; &nbsp;
+					<li><a href="#Settings" data-toggle="tab"><button type="button" class = "btn btn-lg btn-primary">Settings</button></a></li> &nbsp; &nbsp;
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="info">                
+                            <% include partials/UserInfo.ejs %>
+                        </div> 
+                        <div class="tab-pane" id="joined"> 
+                            <div class="">
+                                    <div class = "m-5"></div>
+                                    <% include partials/events/event1.ejs %>
+                                    <div class = "m-5"></div>
+                                    <% include partials/events/event3.ejs %>
+                                    <div class = "m-5"></div>
+                                    <% include partials/vouchers/voucher2.ejs %>
+                                    <div class = "m-5"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="tab-pane" id="created"> 
+                            <div class="">
+                                    <div class = "m-5"></div>
+                                <% include partials/events/event2.ejs%>
+                                <div class = "m-5"></div>
+                                <% include partials/vouchers/voucher3.ejs %>
+                                <div class = "m-5"></div>
+                                <% include partials/vouchers/voucher2.ejs %>
+                                <div class = "m-5"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="tab-pane" id="Settings"> 
+                             <div class="">
+                                    <div class = "m-5"></div>
+                                No Settings available. Deal w it
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
