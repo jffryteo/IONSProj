@@ -1,3 +1,6 @@
+
+
+
 module.exports = {
 
     // routing
@@ -54,13 +57,18 @@ getLogin: (req, res) => {
   res.render('login.ejs');
 },
 
-getCreateFromVoucher: (req, res) => {
-  res.render('createFromVoucher.ejs');
+getVouchers: (req, res) => {
+  res.render('vouchers.ejs');
 },
 
 getCreateFromScratch: (req, res) => {
   res.render('createFromScratch.ejs');
 },
+
+getCreateFromVoucher: (req, res) => {
+  res.render('createFromVoucher.ejs');
+},
+
 getJoin: (req, res) => {
   res.render('join.ejs');
 },
@@ -76,5 +84,6 @@ getHomeUser: (req,res) => {
 getEvent1: (req,res) => {
   res.render('event1Full.ejs');
 }
+
 
 };
