@@ -87,6 +87,9 @@ getEvent2: (req,res) => {
 },
 getEvent3: (req,res) => {
   res.render('event3Full.ejs');
+},
+getRegister: (req,res) => {
+  res.render('register.ejs')
 }
 
 };
