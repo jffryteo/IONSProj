@@ -38,7 +38,7 @@ app.use('/images', express.static('images'));
 app.use(fileUpload()); // configure fileupload
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); // parse form data client
-
+app.use('/style',express.static('style'));
 // fire controllers
 //createEventController(app);
 
