@@ -83,7 +83,12 @@ getHomeUser: (req,res) => {
 },
 getEvent1: (req,res) => {
   res.render('event1Full.ejs');
+},
+getEvent2: (req,res) => {
+  res.render('event2Full.ejs');
+},
+getEvent3: (req,res) => {
+  res.render('event3Full.ejs');
 }
-
 
 };

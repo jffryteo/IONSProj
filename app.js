@@ -5,7 +5,7 @@ var createEventController = require('./controllers/createEventController');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
-var routes = require('./routes/index');
+var routes = require('./routes/routes');
 
 
 
@@ -46,7 +46,7 @@ app.use(bodyParser.json()); // parse form data client
 routes(app);
 
 
-app.listen(4000, ()=>console.log('Express Server is running at port No 4000')); 
+app.listen(4000, ()=>console.log('Express Server is running at port No 4000'));
 
 //get users
 app.get('/users/:id',(req,res)=>{
