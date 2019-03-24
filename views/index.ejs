@@ -14,24 +14,26 @@
     <!--Navigation-->
     <% include partials/navBars/defaultNav.ejs %>
 
-    <!--Spacing-->
-    <div class = "m-5">
 
     </div>
 
 
-        <div id ="Video">
-          <img src="\images\elderly.jpg"  class="img" alt="Voucher 1">
-          <div id="Video-1">How OpenJIO Works~</div>
-          <div id="Video-2">
-            <img src="\images\search.png"  class="img-search" alt="Voucher 1"> Find your JIO. Join it!
-          </div>
-          <div id="Video-3">
-            <img src="\images\Join.png"  class="img-search" alt="Voucher 1"> Start a JIO!
-          </div>
+        <div class ="container1">
+            <video id="Video" preload="auto" autoplay muted loop>
+                <source src="\images\chess.mp4" type="video/mp4">
+                <source src="\images\chess.ogg" type="video/ogg">
+              </video>
+           <div class="overlay"> </div>
+              <div class="container2">
+                <heading>OpenJio</heading>
+                <heading2>
+                  <img src="\images\search.png"  class="img-search" alt="Voucher 1"> Find your JIO. Join it!
+                </heading2>
+                <heading3>
+                  <img src="\images\Join.png"  class="img-search" alt="Voucher 1"> Start a JIO!
+                </heading3> 
+           </div>
         </div>
-
-        <div class = "m-5">
 
         </div>
 
@@ -98,13 +100,13 @@
 
      <!--Spacing-->
 
-    <div class = "m-5">
+    <div class = "m-5"></div>
 
     </div>
     <!--Create and Join buttons-->
     <div id='front-page-buttons' >
       <div class="d-flex justify-content-around">
-        <a href="/login"> <button type="button" class = "btn btn-primary btn-lg ">  CREATE JIO </button> </a>
+        <a href="/createFromVoucher"> <button type="button" class = "btn btn-primary btn-lg ">  CREATE JIO </button> </a>
         <a href= "/join"> <button type="button" class = "btn btn-primary btn-lg " >  JOIN JIO   </button> </a>
       </div>
     </div>
